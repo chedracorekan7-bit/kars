@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+            
+  <!-- La Page Principale (Landing Page Complète) -->
+  <url>
+    <!-- Mettez à jour avec votre véritable domaine en production -->
+    <loc>https://www.votre-domaine.com/</loc>
+    <!-- Date de dernière modification (format AAAA-MM-JJ) -->
+    <lastmod>2026-04-16</lastmod> 
+    <!-- Fréquence de changement estimée -->
+    <changefreq>weekly</changefreq>
+    <!-- Priorité absolue (1.0 = maximum) -->
+    <priority>1.0</priority>
+  </url>
+  
+</urlset>

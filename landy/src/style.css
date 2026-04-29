@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  /* On redéfinit la police sans-serif par défaut pour mettre Satoshi */
+  --font-sans: 'Satoshi', ui-sans-serif, system-ui, sans-serif;
+  /* On crée une police personnalisée pour les grands titres sportifs */
+  --font-display: 'Clash Display', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* 
+  Configuration globale recommandée pour Lenis + GSAP 
+*/
+html, body {
+  /* Définition de la police globale de base */
+  font-family: var(--font-sans);
+  
+  background-color: #050505;
+  color: #ffffff;
+
+  /* Évite l'effet d'élastique sur MacOS/iOS */
+  overscroll-behavior: none;
+  /* Garder une lisibilité optimale sur les typographies ("luxe") */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Les titres utilisent automatiquement la police premium/sportive Clash Display */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600; /* Poids de base pour les titres */
+  letter-spacing: 0.02em; /* Très léger espacement, classique dans le luxe */
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Scrollbar minimale si souhaité (optionnel, classique des sites awwwards) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

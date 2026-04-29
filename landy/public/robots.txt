@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Bloquer l'indexation de potentiels fichiers de config exposés ou d'API internes si existants
+Disallow: /api/
+Disallow: /*?*
+
+# Lier le Sitemap (à mettre à jour avec votre vrai nom de domaine)
+Sitemap: https://www.votre-domaine.com/sitemap.xml
