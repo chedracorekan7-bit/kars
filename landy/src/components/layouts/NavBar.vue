@@ -101,8 +101,8 @@ onMounted(() => {
       <a href="#contacts" class="flex items-center gap-2 md:gap-3 group cursor-pointer p-2 md:p-0">
         <Icon icon="lucide:shopping-bag" class="w-4 h-4 md:w-5 md:h-5 transition-transform duration-500 ease-out group-hover:scale-110 group-hover:-translate-y-0.5" />
         <span class="hidden sm:inline-block relative overflow-hidden text-xs lg:text-sm uppercase tracking-[0.2em] font-medium">
-          <span class="block transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:-translate-y-full">Contacts</span>
-          <span class="block absolute top-0 left-0 transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] translate-y-full group-hover:translate-y-0">Contacts</span>
+          <span class="block transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:-translate-y-full">Reserver</span>
+          <span class="block absolute top-0 left-0 transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] translate-y-full group-hover:translate-y-0">Reserver</span>
         </span>
       </a>
 
