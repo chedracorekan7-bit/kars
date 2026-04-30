@@ -131,17 +131,17 @@ onMounted(() => {
         
         <!-- Image 1 -->
         <div class="slide-img absolute inset-0 w-full h-full">
-          <img :src="car30" alt="Design Premium" class="js-img w-full h-full object-contain">
+          <img :src="car30" alt="Design Premium" width="800" height="600" loading="lazy" class="js-img w-full h-full object-contain">
         </div>
         
         <!-- Image 2 -->
         <div class="slide-img absolute inset-0 w-full h-full">
-          <img :src="car45" alt="Ingénierie Moteur" class="js-img w-full h-full object-contain">
+          <img :src="car45" alt="Ingénierie Moteur" width="800" height="600" loading="lazy" class="js-img w-full h-full object-contain">
         </div>
         
         <!-- Image 3 -->
         <div class="slide-img absolute inset-0 w-full h-full">
-          <img :src="car42" alt="Sensation Vitesse" class="js-img w-full h-full object-contain">
+          <img :src="car42" alt="Sensation Vitesse" width="800" height="600" loading="lazy" class="js-img w-full h-full object-contain">
         </div>
 
         <div class="absolute inset-0 bg-black/20 z-10 hidden lg:block"></div>

@@ -70,7 +70,7 @@ onMounted(() => {
   >
     <!-- GAUCHE : Menu Hamburger Animé -->
     <div class="flex justify-start w-1/4 sm:w-1/3 pointer-events-auto">
-      <button @click="toggleMenu" class="group flex items-center justify-start gap-3 sm:gap-4 cursor-pointer focus:outline-none">
+      <button @click="toggleMenu" aria-label="Ouvrir le menu de navigation" aria-expanded="isMenuOpen" class="group flex items-center justify-start gap-3 sm:gap-4 cursor-pointer focus:outline-none">
         <!-- Icône Hamburger Premium (Lignes custom) -->
         <div class="relative flex flex-col items-start justify-center h-8 w-10 sm:w-12">
           <!-- Ligne du haut (se convertit en la barre diagonale \ ) -->
@@ -90,15 +90,15 @@ onMounted(() => {
 
     <!-- CENTRE : Marque -->
     <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-auto flex items-center justify-center">
-      <a href="/" class="cursor-pointer transition-transform duration-500 hover:scale-105 flex items-center justify-center">
-        <img src="/logo.png" alt="KARZ Logo" class="h-10 md:h-20 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity">
+      <a href="/" aria-label="Retour à l'accueil" class="cursor-pointer transition-transform duration-500 hover:scale-105 flex items-center justify-center">
+        <img src="/logo.png" alt="KARZ Logo" width="160" height="80" class="h-10 md:h-20 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity">
       </a>
     </div>
 
     <!-- DROITE : Contacts -->
     <div class="flex items-center justify-end w-1/4 sm:w-1/3 pointer-events-auto">
       
-      <a href="#contacts" class="flex items-center gap-2 md:gap-3 group cursor-pointer p-2 md:p-0">
+      <a href="#contacts" aria-label="Réserver un véhicule" class="flex items-center gap-2 md:gap-3 group cursor-pointer p-2 md:p-0">
         <Icon icon="lucide:shopping-bag" class="w-4 h-4 md:w-5 md:h-5 transition-transform duration-500 ease-out group-hover:scale-110 group-hover:-translate-y-0.5" />
         <span class="hidden sm:inline-block relative overflow-hidden text-xs lg:text-sm uppercase tracking-[0.2em] font-medium">
           <span class="block transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:-translate-y-full">Reserver</span>

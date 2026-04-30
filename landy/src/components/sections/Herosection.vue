@@ -6,7 +6,10 @@
       <img 
         ref="carImage"
         src="/hero-car.png" 
-        alt="Luxury Sports Car" 
+        alt="Voiture de sport de luxe Karz" 
+        width="1200"
+        height="800"
+        fetchpriority="high"
         class="w-full md:w-full object-cover will-change-transform filter drop-shadow-2xl translate-y-12"
       />
     </div>
@@ -33,7 +36,7 @@
 
       <!-- Scroll Indicator -->
       <div class="overflow-hidden mt-16 pb-2">
-        <div ref="btn" class="group flex flex-col items-center gap-2 cursor-pointer transform translate-y-[150%] will-change-transform opacity-70 hover:opacity-100 transition-opacity duration-500">
+        <div ref="btn" role="button" aria-label="Défiler vers le bas" tabindex="0" class="group flex flex-col items-center gap-2 cursor-pointer transform translate-y-[150%] will-change-transform opacity-70 hover:opacity-100 transition-opacity duration-500">
           <span class="text-[9px] font-sans tracking-[0.4em] uppercase text-white">Scroll</span>
           <Icon icon="lucide:chevron-down" class="w-5 h-5 text-white group-hover:animate-bounce" />
         </div>

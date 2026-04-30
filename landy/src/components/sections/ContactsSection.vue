@@ -224,7 +224,7 @@ const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
             <div class="flex flex-col gap-8 md:gap-12 lg:pl-16 lg:border-l lg:border-white/5 order-2 lg:order-2 pb-16 lg:pb-0 ">
               <div class="info-block flex flex-col gap-5">
                 <div class="flex gap-6 pb-5">
-                   <a v-for="s in socials" :key="s.icon" href="#" class="text-gray-500 hover:text-white transition-colors duration-500">
+                   <a v-for="s in socials" :key="s.icon" href="#" class="text-gray-300 hover:text-white transition-colors duration-500">
                      <Icon :icon="s.icon" class="w-6 h-6" />
                    </a>
                 </div>
@@ -242,7 +242,7 @@ const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
       <div class="flex-shrink-0 border-t border-white/5 bg-[#020202] px-5 sm:px-8 md:px-14 lg:px-20 xl:px-28 py-8 flex justify-between items-center z-20">
         <p class="text-[9px] uppercase tracking-[0.5em] text-gray-700 font-black">© 2026 KARS </p>
        
-        <button id="contacts" @click="scrollToTop" ref="backToTopRef" class="group flex items-center gap-4 text-gray-500 hover:text-white transition-colors cursor-pointer">
+        <button id="contacts" @click="scrollToTop" ref="backToTopRef" class="group flex items-center gap-4 text-gray-300 hover:text-white transition-colors cursor-pointer">
           <span class="text-[10px] uppercase tracking-[0.5em] font-black hidden sm:block">Haut de page</span>
           <div class="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-500">
             <Icon icon="lucide:arrow-up" class="w-5 h-5" />

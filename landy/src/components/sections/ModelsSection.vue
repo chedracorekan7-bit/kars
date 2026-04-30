@@ -199,6 +199,9 @@ onMounted(() => {
           <img 
             :src="model.img" 
             :alt="model.name" 
+            width="600"
+            height="400"
+            loading="lazy"
             class="relative z-10 w-[85%] md:w-[75%] object-contain drop-shadow-[0_20px_45px_rgba(0,0,0,0.8)] transition-transform duration-[1200ms] ease-out group-hover:scale-110 group-hover:rotate-1" 
           />
         </div>
@@ -217,11 +220,11 @@ onMounted(() => {
           <!-- Stats animées : ne se révèlent totalement qu'au passage de la souris ! -->
           <div class="grid grid-cols-2 gap-4 mt-6 pt-2 opacity-0 -translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-[800ms] ease-out delay-100">
             <div>
-              <p class="text-[10px] text-gray-500 uppercase tracking-widest mb-1 font-bold">Puissance brute</p>
-              <p class="text-xl md:text-2xl font-light">{{ model.hp }} <span class="text-sm text-gray-500">CH</span></p>
+              <p class="text-[10px] text-gray-300 uppercase tracking-widest mb-1 font-bold">Puissance brute</p>
+              <p class="text-xl md:text-2xl font-light">{{ model.hp }} <span class="text-sm text-gray-300">CH</span></p>
             </div>
             <div class="border-l border-white/10 pl-6">
-              <p class="text-[10px] text-gray-500 uppercase tracking-widest mb-1 font-bold">0-100 km/h</p>
+              <p class="text-[10px] text-gray-300 uppercase tracking-widest mb-1 font-bold">0-100 km/h</p>
               <p class="text-xl md:text-2xl font-light">{{ model.zeroTo100 }}</p>
             </div>
           </div>

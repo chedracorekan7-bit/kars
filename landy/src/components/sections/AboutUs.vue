@@ -137,7 +137,10 @@ onMounted(() => {
           <img 
             ref="imageRef" 
             :src="car1" 
-            alt="Karz Excellence" 
+            alt="Voiture de luxe Karz Excellence" 
+            width="800"
+            height="600"
+            loading="lazy"
             class="absolute inset-0 w-full h-full object-contain object-center p-4 md:p-8"
             style="will-change: transform;"
           />
