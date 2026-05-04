@@ -137,10 +137,6 @@ const hideAll = () => {
           :key="'bg-'+model.id"
           :id="'float-img-'+model.id"
           :src="model.img" 
-          alt="Modèle Heritage Background"
-          width="600"
-          height="450"
-          loading="lazy"
           class="absolute inset-0 w-full h-full object-contain opacity-0 scale-50 drop-shadow-[0_40px_70px_rgba(0,0,0,0.9)]"
           style="will-change: transform, opacity, filter;"
         />
@@ -186,7 +182,7 @@ const hideAll = () => {
           class="md:hidden overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.76,0,0.24,1)] flex justify-center" 
           :class="activeId === model.id ? 'h-[250px] mt-6 opacity-100' : 'h-0 mt-0 opacity-0'"
         >
-          <img :src="model.img" alt="Modèle Heritage" width="300" height="200" loading="lazy" class="h-full object-contain pointer-events-none drop-shadow-2xl" />
+          <img :src="model.img" class="h-full object-contain pointer-events-none drop-shadow-2xl" />
         </div>
       </li>
     </ul>

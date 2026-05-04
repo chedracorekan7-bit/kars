@@ -100,7 +100,7 @@ onMounted(() => {
       <!-- TOP SLIDER -->
       <div class="absolute top-12 md:top-16 left-0 flex gap-4 md:gap-8 px-4 w-max pointer-events-none" ref="topSlider">
         <div v-for="(car, index) in topCars" :key="'top-'+index" class="w-[65vw] sm:w-[40vw] md:w-[25vw] h-[18vh] md:h-[22vh] shrink-0 overflow-hidden border border-white/5 rounded-sm flex items-center justify-center p-2 bg-gradient-to-tr from-white/5 to-transparent">
-          <img :src="car" alt="Modèle voiture" width="300" height="200" loading="lazy" class="w-full h-full object-contain filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]" />
+          <img :src="car" class="w-full h-full object-contain filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]" />
         </div>
       </div>
 
@@ -121,7 +121,7 @@ onMounted(() => {
       <!-- BOTTOM SLIDER -->
       <div class="absolute bottom-12 md:bottom-16 left-0 flex gap-4 md:gap-8 px-4 w-max pointer-events-none" ref="bottomSlider">
         <div v-for="(car, index) in bottomCars" :key="'bot-'+index" class="w-[65vw] sm:w-[40vw] md:w-[25vw] h-[18vh] md:h-[22vh] shrink-0 overflow-hidden border border-white/5 rounded-sm relative flex items-center justify-center p-2 bg-gradient-to-tr from-white/5 to-transparent">
-          <img :src="car" alt="Modèle voiture" width="300" height="200" loading="lazy" class="w-full h-full object-contain filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]" />
+          <img :src="car" class="w-full h-full object-contain filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]" />
         </div>
       </div>
 

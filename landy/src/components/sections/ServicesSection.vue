@@ -156,7 +156,7 @@ onMounted(() => {
         
         <!-- Service 1 -->
         <div class="group relative pb-8 hover:opacity-100 transition-opacity duration-500 cursor-pointer">
-          <p class="service-number text-[10px] md:text-xs tracking-[0.3em] uppercase text-gray-300 mb-4 font-bold">01</p>
+          <p class="service-number text-[10px] md:text-xs tracking-[0.3em] uppercase text-gray-500 mb-4 font-bold">01</p>
           <h3 class="split-item text-2xl md:text-4xl font-bold uppercase tracking-tight text-gray-300 group-hover:text-white transition-colors duration-500" style="font-family: 'Clash Display', sans-serif;">Personnalisation Absolue</h3>
           <!-- Ligne animée (Border) -->
           <div class="service-line absolute bottom-0 left-0 w-full h-[1px] bg-white/10 group-hover:bg-white/50 transition-colors duration-500"></div>
@@ -164,14 +164,14 @@ onMounted(() => {
 
         <!-- Service 2 -->
         <div class="group relative pb-8 hover:opacity-100 transition-opacity duration-500 cursor-pointer">
-          <p class="service-number text-[10px] md:text-xs tracking-[0.3em] uppercase text-gray-300 mb-4 font-bold">02</p>
+          <p class="service-number text-[10px] md:text-xs tracking-[0.3em] uppercase text-gray-500 mb-4 font-bold">02</p>
           <h3 class="split-item text-2xl md:text-4xl font-bold uppercase tracking-tight text-gray-300 group-hover:text-white transition-colors duration-500" style="font-family: 'Clash Display', sans-serif;">Conciergerie Sans Limites</h3>
           <div class="service-line absolute bottom-0 left-0 w-full h-[1px] bg-white/10 group-hover:bg-white/50 transition-colors duration-500"></div>
         </div>
 
         <!-- Service 3 -->
         <div class="group relative pb-8 hover:opacity-100 transition-opacity duration-500 cursor-pointer">
-          <p class="service-number text-[10px] md:text-xs tracking-[0.3em] uppercase text-gray-300 mb-4 font-bold">03</p>
+          <p class="service-number text-[10px] md:text-xs tracking-[0.3em] uppercase text-gray-500 mb-4 font-bold">03</p>
           <h3 class="split-item text-2xl md:text-4xl font-bold uppercase tracking-tight text-gray-300 group-hover:text-white transition-colors duration-500" style="font-family: 'Clash Display', sans-serif;">Héritage & Restauration</h3>
           <div class="service-line absolute bottom-0 left-0 w-full h-[1px] bg-white/10 group-hover:bg-white/50 transition-colors duration-500"></div>
         </div>
@@ -185,7 +185,7 @@ onMounted(() => {
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12 lg:gap-8 text-left">
         
         <div class="stat-block flex flex-col gap-3">
-          <p class="text-[9px] uppercase tracking-[0.4em] text-gray-300 font-bold">Clients Satisfaits</p>
+          <p class="text-[9px] uppercase tracking-[0.4em] text-gray-500 font-bold">Clients Satisfaits</p>
           <div class="flex items-baseline gap-2">
             <span class="text-xl text-gray-400 font-light ml-7 md:ml-0">+</span>
              <h4 class="counter-val  md:ml-0 text-4xl sm:text-5xl md:text-6xl font-black text-white" style="font-family: 'Clash Display', sans-serif;" data-target="280">0</h4>
@@ -194,14 +194,14 @@ onMounted(() => {
         </div>
 
         <div class="stat-block flex flex-col gap-3">
-          <p class="text-[9px] uppercase tracking-[0.4em] text-gray-300 font-bold">Véhicules Vendus</p>
+          <p class="text-[9px] uppercase tracking-[0.4em] text-gray-500 font-bold">Véhicules Vendus</p>
           <div class="flex items-baseline gap-2">
              <h4 class="counter-val  md:ml-5 text-4xl sm:text-5xl md:text-6xl font-black text-white" style="font-family: 'Clash Display', sans-serif;" data-target="320">0</h4>
           </div>
         </div>
 
         <div class="stat-block flex flex-col gap-3">
-          <p class="text-[9px] uppercase tracking-[0.4em] text-gray-300 font-bold">Heures d'Artisanat</p>
+          <p class="text-[9px] uppercase tracking-[0.4em] text-gray-500 font-bold">Heures d'Artisanat</p>
           <div class="flex items-baseline gap-2">
              <h4 class="counter-val ml-5 md:ml-7 text-4xl sm:text-5xl md:text-6xl font-black text-white" style="font-family: 'Clash Display', sans-serif;" data-target="86">0</h4>
              <span class="text-xl text-gray-400 font-light">K</span>
@@ -209,7 +209,7 @@ onMounted(() => {
         </div>
 
         <div class="stat-block flex flex-col gap-3">
-          <p class="text-[9px] uppercase tracking-[0.4em] text-gray-300 font-bold">Distinctions Officielles</p>
+          <p class="text-[9px] uppercase tracking-[0.4em] text-gray-500 font-bold">Distinctions Officielles</p>
           <div class="flex items-baseline gap-2">
              <h4 class="counter-val ml-5 md:ml-12 text-4xl sm:text-5xl md:text-6xl font-black text-white" style="font-family: 'Clash Display', sans-serif;" data-target="24">0</h4>
           </div>

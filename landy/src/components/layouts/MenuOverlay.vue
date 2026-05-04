@@ -110,28 +110,28 @@ const onLeave = (el, done) => {
 
         <!-- Bas de page du menu (Infos de contact & Réseaux Sociaux) -->
         <div class="mt-20 flex flex-wrap gap-8 items-center  pt-12">
-          <a href="#" aria-label="Notre page Instagram" class="group flex items-center gap-3 text-xs md:text-sm tracking-[0.2em] font-medium text-gray-300 uppercase hover:text-white transition-all duration-300">
+          <a href="#" class="group flex items-center gap-3 text-xs md:text-sm tracking-[0.2em] font-medium text-gray-500 uppercase hover:text-white transition-all duration-300">
             <div class="w-10 h-10 mb-4 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-500">
                <Icon icon="simple-icons:instagram" class="w-7 h-7" />
             </div>
             
           </a>
 
-          <a href="#" aria-label="Notre page Facebook" class="group flex items-center gap-3 text-xs md:text-sm tracking-[0.2em] font-medium text-gray-300 uppercase hover:text-white transition-all duration-300">
+          <a href="#" class="group flex items-center gap-3 text-xs md:text-sm tracking-[0.2em] font-medium text-gray-500 uppercase hover:text-white transition-all duration-300">
             <div class="w-10 h-10 mb-4 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[#1877F2] group-hover:text-white group-hover:border-[#1877F2] transition-all duration-500">
                <Icon icon="simple-icons:facebook" class="w-7 h-7" />
             </div>
             
           </a>
 
-          <a href="#" aria-label="Notre page LinkedIn" class="group flex items-center gap-3 text-xs md:text-sm tracking-[0.2em] font-medium text-gray-300 uppercase hover:text-white transition-all duration-300">
+          <a href="#" class="group flex items-center gap-3 text-xs md:text-sm tracking-[0.2em] font-medium text-gray-500 uppercase hover:text-white transition-all duration-300">
             <div class="w-10 h-10 mb-4 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[#0A66C2] group-hover:text-white group-hover:border-[#0A66C2] transition-all duration-500">
                <Icon icon="simple-icons:linkedin" class="w-6 h-6" />
             </div>
             
           </a>
 
-          <a href="#" aria-label="Nous contacter sur WhatsApp" class="group flex items-center gap-3 text-xs md:text-sm tracking-[0.2em] font-medium text-gray-300 uppercase hover:text-white transition-all duration-300">
+          <a href="#" class="group flex items-center gap-3 text-xs md:text-sm tracking-[0.2em] font-medium text-gray-500 uppercase hover:text-white transition-all duration-300">
             <div class="w-10 h-10 mb-4 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[#25D366] group-hover:text-white group-hover:border-[#25D366] transition-all duration-500">
                <Icon icon="simple-icons:whatsapp" class="w-7 h-7" />
             </div>
