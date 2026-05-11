@@ -138,8 +138,6 @@ onMounted(() => {
             ref="imageRef" 
             :src="car1" 
             alt="Karz Excellence" 
-            loading="lazy"
-            decoding="async"
             class="absolute inset-0 w-full h-full object-contain object-center p-4 md:p-8"
             style="will-change: transform;"
           />
