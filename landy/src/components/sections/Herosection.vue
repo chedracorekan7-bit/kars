@@ -7,6 +7,8 @@
         ref="carImage"
         src="/hero-car.png" 
         alt="Luxury Sports Car" 
+        fetchpriority="high"
+        decoding="sync"
         class="w-full md:w-full object-cover will-change-transform filter drop-shadow-2xl translate-y-12"
       />
     </div>

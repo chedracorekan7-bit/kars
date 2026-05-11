@@ -131,7 +131,7 @@ const onLeave = (el, done) => {
             
           </a>
 
-          <a href="#" class="group flex items-center gap-3 text-xs md:text-sm tracking-[0.2em] font-medium text-gray-500 uppercase hover:text-white transition-all duration-300">
+          <a href="https://wa.me/2290199514032" class="group flex items-center gap-3 text-xs md:text-sm tracking-[0.2em] font-medium text-gray-500 uppercase hover:text-white transition-all duration-300">
             <div class="w-10 h-10 mb-4 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[#25D366] group-hover:text-white group-hover:border-[#25D366] transition-all duration-500">
                <Icon icon="simple-icons:whatsapp" class="w-7 h-7" />
             </div>
