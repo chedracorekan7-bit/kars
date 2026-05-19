@@ -199,10 +199,6 @@ onMounted(() => {
           <img 
             :src="model.img" 
             :alt="model.name" 
-            width="1200"
-            height="800"
-            loading="lazy"
-            decoding="async"
             class="relative z-10 w-[85%] md:w-[75%] object-contain drop-shadow-[0_20px_45px_rgba(0,0,0,0.8)] transition-transform duration-[1200ms] ease-out group-hover:scale-110 group-hover:rotate-1" 
           />
         </div>

@@ -6,12 +6,7 @@
       <img 
         ref="carImage"
         src="/hero-car.png" 
-        alt="Voiture de sport de luxe - KARS" 
-        width="1920"
-        height="1080"
-        fetchpriority="high"
-        decoding="sync"
-        loading="eager"
+        alt="Luxury Sports Car" 
         class="w-full md:w-full object-cover will-change-transform filter drop-shadow-2xl translate-y-12"
       />
     </div>
