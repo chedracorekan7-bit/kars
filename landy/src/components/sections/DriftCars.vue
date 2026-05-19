@@ -62,7 +62,7 @@ onUnmounted(() => {
     <!-- Couche Vidéo / Image -->
     <video
       ref="videoRef"
-      src="../../assets/cars/cin1.mp4" 
+      src="../../assets/cars/cinatra.mp4" 
       class="absolute inset-0 w-full h-full object-cover z-0 opacity-80"
       alt="Cinematic Car"
       autoplay

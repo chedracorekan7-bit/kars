@@ -110,21 +110,21 @@ const onLeave = (el, done) => {
 
         <!-- Bas de page du menu (Infos de contact & Réseaux Sociaux) -->
         <div class="mt-20 flex flex-wrap gap-8 items-center  pt-12">
-          <a href="#" aria-label="Instagram" class="group flex items-center gap-3 text-xs md:text-sm tracking-[0.2em] font-medium text-gray-500 uppercase hover:text-white transition-all duration-300">
+          <a href="https://www.instagram.com/chado3357?igsh=MWwwNjg4aWl3NmVjZw==" aria-label="Instagram" class="group flex items-center gap-3 text-xs md:text-sm tracking-[0.2em] font-medium text-gray-500 uppercase hover:text-white transition-all duration-300">
             <div class="w-10 h-10 mb-4 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-500">
                <Icon icon="simple-icons:instagram" class="w-7 h-7" />
             </div>
             
           </a>
 
-          <a href="#" aria-label="Facebook" class="group flex items-center gap-3 text-xs md:text-sm tracking-[0.2em] font-medium text-gray-500 uppercase hover:text-white transition-all duration-300">
+          <a href="https://www.facebook.com/chedrac.orekan" aria-label="Facebook" class="group flex items-center gap-3 text-xs md:text-sm tracking-[0.2em] font-medium text-gray-500 uppercase hover:text-white transition-all duration-300">
             <div class="w-10 h-10 mb-4 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[#1877F2] group-hover:text-white group-hover:border-[#1877F2] transition-all duration-500">
                <Icon icon="simple-icons:facebook" class="w-7 h-7" />
             </div>
             
           </a>
 
-          <a href="#" aria-label="LinkedIn" class="group flex items-center gap-3 text-xs md:text-sm tracking-[0.2em] font-medium text-gray-500 uppercase hover:text-white transition-all duration-300">
+          <a href="https://www.linkedin.com/in/chedrac-orekan-16a3ba384?utm_source=share_via&utm_content=profile&utm_medium=member_android" aria-label="LinkedIn" class="group flex items-center gap-3 text-xs md:text-sm tracking-[0.2em] font-medium text-gray-500 uppercase hover:text-white transition-all duration-300">
             <div class="w-10 h-10 mb-4 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[#0A66C2] group-hover:text-white group-hover:border-[#0A66C2] transition-all duration-500">
                <Icon icon="simple-icons:linkedin" class="w-6 h-6" />
             </div>
