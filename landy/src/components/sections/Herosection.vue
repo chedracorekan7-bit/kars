@@ -47,10 +47,11 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted, watch } from 'vue';
 import { Icon } from '@iconify/vue';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { isAppLoaded } from '../../composables/useLoader';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -67,9 +68,9 @@ onMounted(() => {
   ctx = gsap.context(() => {
     
     // --------------------------------------------------
-    // TIMELINE D'INTRODUCTION (Au chargement de la page)
+    // TIMELINE D'INTRODUCTION (Attente du Preloader)
     // --------------------------------------------------
-    const tl = gsap.timeline({ defaults: { ease: 'power4.out' } });
+    const tl = gsap.timeline({ defaults: { ease: 'power4.out' }, paused: true });
 
     // 1. Apparition de l'image ("Focus") - Opacité 1 (pleine lumière) et scale normal
     tl.fromTo(carImage.value, 
@@ -84,6 +85,15 @@ onMounted(() => {
       stagger: 0.15, // Délai entre chaque ligne
       ease: 'expo.out'
     }, "-=2"); // "-=2" signifie "Démarrer 2 secondes avant la fin de l'animation de l'image" -> ça se superpose !
+
+    // On déclenche l'animation uniquement quand le preloader a fini
+    if (isAppLoaded.value) {
+      tl.play();
+    } else {
+      watch(isAppLoaded, (loaded) => {
+        if (loaded) tl.play();
+      });
+    }
 
     // --------------------------------------------------
     // ANIMATION AU DÉFILEMENT (Parallaxe)

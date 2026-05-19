@@ -1,9 +1,10 @@
 <script setup>
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, watch } from 'vue';
 import { Icon } from '@iconify/vue';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { isMenuOpen, toggleMenu } from '../../composables/useMenu';
+import { isAppLoaded } from '../../composables/useLoader';
 
 
 // Enregistrement du plugin ScrollTrigger
@@ -13,12 +14,25 @@ gsap.registerPlugin(ScrollTrigger);
 const navbarRef = ref(null);
 
 onMounted(() => {
-  // Animation GSAP douce à l'arrivée initiale
-  gsap.fromTo(
-    navbarRef.value,
-    { yPercent: -100, opacity: 0 },
-    { yPercent: 0, opacity: 1, duration: 1.5, ease: 'power4.out', delay: 0.1 }
-  );
+  // Fonction pour animer l'entrée
+  const playIntro = () => {
+    gsap.fromTo(
+      navbarRef.value,
+      { yPercent: -100, opacity: 0 },
+      { yPercent: 0, opacity: 1, duration: 1.5, ease: 'power4.out', delay: 0.1 }
+    );
+  };
+
+  // Attente de la fin du preloader
+  if (isAppLoaded.value) {
+    playIntro();
+  } else {
+    // Par défaut, on masque la navbar en attendant
+    gsap.set(navbarRef.value, { yPercent: -100, opacity: 0 });
+    watch(isAppLoaded, (loaded) => {
+      if (loaded) playIntro();
+    });
+  }
 
   let lastDirection = 0;
 
