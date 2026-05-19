@@ -1,16 +1,18 @@
 <script setup>
+import { defineAsyncComponent } from 'vue'
 import { useSmoothScroll } from './composables/useSmoothScroll'
 import Herosection from './components/sections/Herosection.vue'
-import AboutUs from './components/sections/AboutUs.vue'
-import Discover from './components/sections/Discover.vue'
-import MainCars from './components/sections/MainCars.vue'
-import ModelsSection from './components/sections/ModelsSection.vue'
-import HeritageSection from './components/sections/HeritageSection.vue'
-import DriftCars from './components/sections/DriftCars.vue'
-import ServicesSection from './components/sections/ServicesSection.vue'
-import ContactsSection from './components/sections/ContactsSection.vue'
 import NavBar from './components/layouts/NavBar.vue'
 import MenuOverlay from './components/layouts/MenuOverlay.vue'
+
+const AboutUs = defineAsyncComponent(() => import('./components/sections/AboutUs.vue'))
+const Discover = defineAsyncComponent(() => import('./components/sections/Discover.vue'))
+const MainCars = defineAsyncComponent(() => import('./components/sections/MainCars.vue'))
+const ModelsSection = defineAsyncComponent(() => import('./components/sections/ModelsSection.vue'))
+const HeritageSection = defineAsyncComponent(() => import('./components/sections/HeritageSection.vue'))
+const DriftCars = defineAsyncComponent(() => import('./components/sections/DriftCars.vue'))
+const ServicesSection = defineAsyncComponent(() => import('./components/sections/ServicesSection.vue'))
+const ContactsSection = defineAsyncComponent(() => import('./components/sections/ContactsSection.vue'))
 
 // Initialisation globale du défilement fluide et de la synchro GSAP
 useSmoothScroll()

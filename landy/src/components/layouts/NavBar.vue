@@ -91,7 +91,7 @@ onMounted(() => {
     <!-- CENTRE : Marque -->
     <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-auto flex items-center justify-center">
       <a href="/" class="cursor-pointer transition-transform duration-500 hover:scale-105 flex items-center justify-center">
-        <img src="/logo.png" alt="KARZ Logo" class="h-10 md:h-20 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity">
+        <img src="/logo.png" alt="KARZ Logo" width="160" height="80" loading="lazy" decoding="async" class="h-10 md:h-20 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity">
       </a>
     </div>
 
